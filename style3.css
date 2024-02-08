@@ -1,0 +1,193 @@
+/**
+ * Theme Name: Ink
+ * Theme URI: https://codestag.com/themes/ink
+ * Description: Child theme for customizing Ink.
+ * Version: 1.0
+ * Author: Codestag
+ * Author URI: https://codestag.com/
+ * Template: ink
+ */
+
+/* Import Stylesheets, don't remove these.
+-----------------------------------------------------------*/
+@import url('../ink/style.css');
+
+/* Required Wordpress Classes, don't remove these.
+-----------------------------------------------------------*/
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alignleft { float: left; }
+.alignright { float: right; }
+
+
+/* Make all custom CSS changes BELOW this line
+-----------------------------------------------------------*/
+/* Example: Change the sidebar background to blue:*/
+#sidebar {
+    background: blue;}
+
+/* Changer Olivier Crouzel et sous titre*/
+.site-title {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 30px;
+    font-size: 1,5rem;
+}
+
+/* .site-description {color: grey;}*/
+
+/* taille titre pages*/
+.entry-title-primary {
+    font-size: 60px;
+    font-size: 2.6875rem;
+    font-weight: 300;
+}
+
+/* taille soustitre pages*/
+.entry-subtitle {
+    display: block;
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+
+.entry-content p {
+    margin-bottom:30px!important;
+    font-size: 0.9em;
+}
+
+/* Baisser le contenu sous le logo*/
+.site-header {padding: 60px;}
+
+/* Modifier l'espace entre la page et les widgets*/
+.site-main .page {
+    padding-bottom: 20px;
+    padding-bottom: 0.625rem;
+}
+
+/* Enlever date du blog*/
+.entry-meta {display:none;}
+
+.widgettitle {font-weight: 300;}
+
+/*Titre des miniatures*/
+.stag_widget_recent_posts_grid .entry-title {
+    font-size:1.5rem !important;
+    font-weight: 300;
+}
+
+/*Titre des pages*/
+.article-cover .entry-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 300;
+}
+
+.entry-title {
+    display: block;
+    font-size: 2.5em;
+}
+
+.site-navigation-toggle {
+    font-size: 1.2rem;
+    line-height: 17px;
+    margin-left: 10px;
+    position: absolute;
+    right: 30px;
+    text-transform: uppercase;
+}
+
+
+/* ==== ICONE DU MENU === */
+.fa-navicon:before{
+    content: "\f0c9";
+    font-size: 25px;
+    margin-right: 6px;
+}
+
+.fa, .stag-icon {
+    margin-top: 40px;
+}
+
+.list-articles .list-articles-item a .entry-title-primary{font-size: 18px;}
+.list-articles .list-articles-item a.active .entry-title-primary{color: #13171a;}
+.list-articles .list-articles-item a .entry-subtitle{display:none;}
+.list-articles-title{font-size:16px; font-weight: 700; text-transform: uppercase; font-family: "Montserrat";}
+.list-articles-title .fa{padding-right: 5px;}
+
+.entry-footer {border-bottom: none;}
+
+.stag_widget_recent_posts_grid .entry-content {
+    margin-bottom: 0;
+}
+
+/* Couleur du tire du site (olivier crouzel) et de l'icone du menu */
+.page-template .site-header a {
+    color: #000000;
+}
+
+/* Marge du titre*/
+.header-over[class*="page-id-"].page-template-widgetized .hentry {
+    padding-top: 30px;
+}
+
+/* Couleur du titre*/
+.hentry .entry-title{
+    color: #000000;
+}
+
+/*Marge du sous titre*/
+span.entry-subtitle.entry-subtitle {
+    margin: 12px auto 30px;
+}
+
+
+/* ===== BORDURES BAS =====*/
+
+.page .site-footer,
+.stag-custom-widget-area + .site-footer{
+    border: none;
+    padding: 0;
+}
+
+.entry-footer {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.single .site-footer {
+    margin-top: 0;
+    border-top: 0;
+    padding: 0
+}
+
+/*================================*/
+
+/* OpacitÃ© des images de post */
+.post-cover {
+	opacity: 0.8;
+}
+
+
+/*================================*/
+
+/* Marges de l'entÃªte fond blanc */
+.page-cover {
+    padding: 7.8125rem 0 20px;
+}
+
+@media screen and (max-width: 420px) {
+    body[class*="page-id"]:not(.page-template-current-php) .entry-header {
+        margin-top: 35px;
+    }
+    .site-header {
+        padding: 30px;
+    }
+}
+
